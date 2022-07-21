@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include<string.h>
+
+void main(){
+    
+    int d;
+    scanf("%d",&d);
+    int count =0;
+    int k = d/3;
+    count += k;
+    double area = k*k/2.0;
+    if(d%k!=0){
+        count +=1;
+        int c = d%k;
+        area += c*c/2.0;
+    }
+    printf("The Minimum Number of Triangle Required is :: %d\n",count);
+    printf("The Total Area is :: %.2lf",area);
+    
+      
+    
+}
